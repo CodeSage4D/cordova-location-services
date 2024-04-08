@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-location" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Cordova Location Plugin</name>
+    <description>A Cordova plugin for geolocation and location-related functionalities.</description>
+    <license>MIT</license>
+    <keywords>cordova, location, geolocation</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaLocationPlugin">
+                <param name="android-package" value="cordova.plugin.location.cordovaLocationPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/cordovaLocationPlugin.java" target-dir="src/cordova/plugin/location"/>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <!-- Add iOS-specific configuration here if needed -->
+    </platform>
+</plugin>

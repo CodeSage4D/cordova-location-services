@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-location",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for geolocation and location-related functionalities.",
+  "cordova": {
+    "id": "cordova-plugin-location",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSage4D/cordova-location-services.git"
+  },
+  "keywords": [
+    "cordova",
+    "location",
+    "geolocation",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Karan Mishra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeSage4D/cordova-location-services/issues"
+  },
+  "homepage": "https://github.com/CodeSage4D/cordova-location-services#readme"
+}
